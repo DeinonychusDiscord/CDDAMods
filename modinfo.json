@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "Junkmail2",
+    "name": "Museum Armor Rebalance",
+    "authors": [ "Unknown" ],
+    "description": "Rebalances museum chainmail and junk plate armor so that they start out worse than base game, but can be restored to base game stats by refurbishing, and enhanced further by galvanizing. Galvanizing gives protection boost and mild environmental protection. This mod also changes the plate suits to be strapped layer instead of outer layer, and gives coverage for both chainmail suit and plate suit to hands and feet.",
+    "category": "rebalance",
+    "dependencies": [ "dda" ]
+  }
+]

@@ -1,0 +1,150 @@
+[
+ {
+    "result": "chainmail_junk_suit",
+    "type": "recipe",
+	"//": "You're not only connecting the parts together, but modifying the chainmail into a jumpsuit through carefully opening it down the middle and adding clasps or straps to close it back up. ",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": "2 h",
+    "reversible": true,
+    "autolearn": true,
+	"tools":
+	[ [ [ "pliers_locking", -1  ], [  "pliers", -1 ], [  "big_pliers", -1 ] ] ],
+	"using": [ [ "sewing_standard", 20 ], [ "clasps", 6 ] ],
+    "qualities": [ { "id": "LEATHER_AWL", "level": 1 }, { "id": "SEW", "level": 1} ],
+    "flags": [ "NO_RESIZE" ],
+    "components": [
+      [ [ "chainmail_junk_hood", 1 ] ],
+      [ [ "chainmail_junk_vest", 1 ] ],
+      [ [ "chainmail_junk_arms", 1 ] ],
+	  [ [ "chainmail_junk_hands",1 ] ],
+      [ [ "chainmail_junk_legs", 1 ] ],
+	  [ [ "chainmail_junk_feet", 1 ] ]
+    ]
+  },
+    {
+    "result": "chainmail_refurbished_suit",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "fabrication",
+	"skills_required": [ "tailor", 3 ],
+    "difficulty": 3,
+	"//": "It takes a long time to actually carefully ply off dozens of individual busted links and replace them. It's also careful work replacing all the leather straps without disrupting the mail.",
+	"//2": "It also takes a while to let the vinegar soak into the metal long enough for the rust to easily come off with scrubbing. Then polishing comes last after everything's been replaced.",
+    "time": "6 h",
+    "autolearn": true,
+	"using": [ [ "tailoring_leather_patchwork_simple", 8 ], [ "sewing_standard", 20 ] ],
+    "qualities": [ { "id": "LEATHER_AWL", "level": 1 }, { "id": "SEW", "level": 1} ],
+	"tools": [ 
+	[ [ "brush", -1] , [ "dish_towel", -1] ], 
+	[ ["polisher", 200] ],
+	[ [ "pliers_locking", -1  ], [  "pliers", -1 ], [  "big_pliers", -1 ] ],
+	[ [ "cotton_patchwork", -1], [ "towel", -1 ] ]
+		],
+    "flags": [ "NO_RESIZE" ],
+    "proficiencies": [ { "proficiency": "prof_closures" }, { "proficiency": "prof_chain_armour" }, { "proficiency": "prof_leatherworking_basic" }, { "proficiency": "prof_leatherworking" } ],
+    "components": [
+      [ [ "chainmail_junk_suit", 1 ] ],
+      [ [ "chain_link", 60 ] ],
+      [ [ "leather_belt", 6 ], [ "leather", 18 ] ],
+	  [ [ "vinegar", 250 ], [ "chem_citric_acid", 15] ]
+    ]
+  },
+  {
+    "result": "chainmail_galvanized_suit",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "chemistry",
+    "difficulty": 4,
+    "time": "3 h",
+    "autolearn": true,
+	"tools": [ 
+	[ [ "tongs", -1] ],
+	[ [ "forge", 200], [ "hotplate", 200] ]
+		
+	],
+    "flags": [ "NO_RESIZE" ],
+    "components": [
+      [ [ "chainmail_refurbished_suit", 1 ] ],
+      [ [ "zinc_metal", 200 ] ],
+	  [ [ "bucket", 1 ] ]
+    ]
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  {
+    "result": "chainmail_junk_suit",
+    "type": "uncraft",
+    "activity_level": "MODERATE_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "1 h 30 m",
+    "tools": [ [[ "pliers_locking", -1]], [[ "pliers", -1]], [["big_pliers", -1]] ],
+    "components": [ [ [ "chainmail_junk_hood", 1 ] ], [ [ "chainmail_junk_vest", 1 ] ], [ [ "chainmail_junk_hands", 1 ] ], [ [ "chainmail_junk_arms", 1 ] ], [ [ "chainmail_junk_legs", 1] ], [ [ "chainmail_junk_feet", 1] ] ]
+  },
+   {
+    "result": "chainmail_junk_vest",
+    "type": "uncraft",
+    "activity_level": "MODERATE_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "5 h",
+    "tools": [ [[ "pliers_locking", -1]], [[ "pliers", -1]], [["big_pliers", -1]] ],
+    "components": [ [ [ "chain_link", 60 ] ] ]
+  },
+   {
+    "result": "chainmail_junk_legs",
+    "type": "uncraft",
+    "activity_level": "MODERATE_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "5 h",
+    "tools": [ [[ "pliers_locking", -1]], [[ "pliers", -1]], [["big_pliers", -1]] ],
+    "components": [ [ [ "chain_link", 50 ] ] ]
+  },
+   {
+    "result": "chainmail_junk_hood",
+    "type": "uncraft",
+    "activity_level": "MODERATE_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "3 h",
+    "tools": [ [[ "pliers_locking", -1]], [[ "pliers", -1]], [["big_pliers", -1]] ],
+    "components": [ [ [ "chain_link", 40 ] ] ]
+  },
+   {
+    "result": "chainmail_junk_hands",
+    "type": "uncraft",
+    "activity_level": "MODERATE_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "3 h",
+    "tools": [ [[ "pliers_locking", -1]], [[ "pliers", -1]], [["big_pliers", -1]] ],
+    "components": [ [ [ "chain_link", 30 ] ] ]
+  },
+  {
+    "result": "chainmail_junk_feet",
+    "type": "uncraft",
+    "activity_level": "MODERATE_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "3 h",
+    "tools": [ [[ "pliers_locking", -1]], [[ "pliers", -1]], [["big_pliers", -1]] ],
+    "components": [ [ [ "chain_link", 30 ] ] ]
+  }
+  ]

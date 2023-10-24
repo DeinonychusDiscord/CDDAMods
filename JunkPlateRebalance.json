@@ -1,0 +1,175 @@
+[
+{
+    "id": "armor_junk_plate",
+    "type": "ARMOR",
+    "copy-from": "armor_plate",
+    "name": { "str": "junk ornamental plate armor" },
+    "description": "An extremely heavy suit of ornamental armor.  The metal shows signs of rust and corrosion, and the leather straps are tattered.",
+    "material": [ "budget_steel", "leather" ],
+	"covers": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r", "hand_l", "hand_r", "foot_l", "foot_r"],
+    "coverage": 85,
+	"material_thickness": 4.5,
+	"delete-flags": "OUTER",
+	"extend-flags": "STRAPPED"
+  },
+  {
+    "id": "armor_junk_lightplate",
+    "type": "ARMOR",
+    "copy-from": "armor_lightplate",
+    "name": { "str": "junk plate armor" },
+    "description": "A suit of Gothic plate armor.  The metal shows signs of rust and corrosion, and the leather straps are tattered.",
+    "material": [ "budget_steel", "leather" ],
+	"covers": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r", "hand_l", "hand_r", "foot_l", "foot_r"],
+    "coverage": 90,
+	"material_thickness": 3.5,
+	"delete-flags": "OUTER",
+	"extend-flags": "STRAPPED"
+	
+  },
+  {
+    "id": "armor_refurbished_plate",
+    "type": "ARMOR",
+    "copy-from": "armor_junk_plate",
+    "name": { "str": "refurbished ornamental plate armor" },
+	"material": [ "steel", "leather" ],
+	"covers": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r", "hand_l", "hand_r", "foot_l", "foot_r"],
+    "coverage": 90,
+	"material_thickness": 5,
+    "description": "An extremely heavy suit of ornamental armor.  It has been polished, repaired, and refurbished. It would make any museum curator proud to display."
+  },
+  {
+    "id": "armor_refurbished_lightplate",
+    "type": "ARMOR",
+    "copy-from": "armor_junk_lightplate",
+    "name": { "str": "refurbished plate armor" },
+	"material": [ "steel", "leather" ],
+	"covers": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r", "hand_l", "hand_r", "foot_l", "foot_r"],
+    "coverage": 95,
+	"material_thickness": 4,
+    "description": "A suit of Gothic plate armor. It has been polished, repaired, and refurbished. It would make any museum curator proud to display."
+	
+  },
+   {
+    "id": "armor_galvanized_plate",
+    "type": "ARMOR",
+    "copy-from": "armor_refurbished_plate",
+    "name": { "str": "galvanized ornamental plate armor" },
+	"material": [ "gal_steel", "leather" ],
+	"material_thickness": 5.3,
+	"environmental_protection": 6,
+    "description": "A galvanized suit of ornamental armor. Galvanizing has made it somewhat tougher and given it mild acid resistance."
+  },
+  {
+    "id": "armor_galvanized_lightplate",
+    "type": "ARMOR",
+    "copy-from": "armor_refurbished_lightplate",
+    "name": { "str": "galvanized plate armor" },
+	"material": [ "gal_steel", "leather" ],
+	"material_thickness": 4.3,
+	"environmental_protection": 6,
+    "description": "A suit of galvanized Gothic plate armor. Galvanizing has made it somewhat tougher and given it mild acid resistance."
+	
+  },
+  
+      {
+    "result": "armor_refurbished_plate",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "fabrication",
+	"skills_required": [ "tailor", 3 ],
+    "difficulty": 4,
+    "time": "6 h",
+    "autolearn": true,
+	"using": [ [ "tailoring_leather_patchwork_simple", 8 ], [ "sewing_standard", 20 ], ["repair_welding_standard", 20 ] ],
+    "qualities": [ { "id": "LEATHER_AWL", "level": 1 }, { "id": "SEW", "level": 1} ],
+	"tools": [ 
+	[ [ "brush", -1] , [ "dish_towel", -1] ], 
+	[ ["polisher", 200] ],
+	[ [ "cotton_patchwork", -1], [ "towel", -1 ] ]
+		],
+    "flags": [ "NO_RESIZE" ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_welding_basic" }, { "proficiency": "prof_leatherworking_basic" }, { "proficiency": "prof_leatherworking" } ],
+    "components": [
+      [ [ "armor_junk_plate", 1 ] ],
+      [ [ "leather_belt", 8 ], [ "leather", 24 ] ],
+	  [ [ "vinegar", 500 ], [ "chem_citric_acid", 30] ]
+    ]
+  },
+        {
+    "result": "armor_refurbished_lightplate",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "fabrication",
+	"skills_required": [ "tailor", 3 ],
+    "difficulty": 4,
+    "time": "6 h",
+    "autolearn": true,
+	"using": [ [ "tailoring_leather_patchwork_simple", 8 ], [ "sewing_standard", 20 ], ["repair_welding_standard", 20 ] ],
+    "qualities": [ { "id": "LEATHER_AWL", "level": 1 }, { "id": "SEW", "level": 1} ],
+	"tools": [ 
+	[ [ "brush", -1] , [ "dish_towel", -1] ], 
+	[ ["polisher", 200] ],
+	[ [ "cotton_patchwork", -1], [ "towel", -1 ] ]
+		],
+    "flags": [ "NO_RESIZE" ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_welding_basic" }, { "proficiency": "prof_leatherworking_basic" }, { "proficiency": "prof_leatherworking" } ],
+    "components": [
+      [ [ "armor_junk_lightplate", 1 ] ],
+      [ [ "leather_belt", 8 ], [ "leather", 24 ] ],
+	  [ [ "vinegar", 500 ], [ "chem_citric_acid", 30] ]
+    ]
+  },
+    {
+    "result": "armor_galvanized_lightplate",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "chemistry",
+    "difficulty": 4,
+    "time": "4 h",
+    "autolearn": true,
+	"tools": [ 
+	[ [ "tongs", -1] ],
+	[ [ "forge", 200], [ "hotplate", 200] ],
+	[ [ "30gal_drum", -1], [ "box_large_metal", -1], ["box_medium_metal", -1] ]
+		
+	],
+    "flags": [ "NO_RESIZE" ],
+    "components": [
+      [ [ "armor_refurbished_lightplate", 1 ] ],
+      [ [ "zinc_metal", 600 ] ]
+    ]
+  },
+    {
+    "result": "armor_galvanized_plate",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "chemistry",
+    "difficulty": 4,
+    "time": "4 h",
+    "autolearn": true,
+	"tools": [ 
+	[ [ "tongs", -1] ],
+	[ [ "forge", 200], [ "hotplate", 200] ],
+	[ [ "30gal_drum", -1], [ "box_large_metal", -1], ["box_medium_metal", -1] ]
+		
+	],
+    "flags": [ "NO_RESIZE" ],
+    "components": [
+      [ [ "armor_refurbished_plate", 1 ] ],
+      [ [ "zinc_metal", 600 ] ]
+    ]
+  }
+  
+
+
+
+
+]
