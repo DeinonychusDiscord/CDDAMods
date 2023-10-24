@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "Junkmail",
+    "name": "Museum Repair",
+    "authors": [ "Unknown" ],
+    "description": "Lets you actually repair and assemble that antique chainmail amd plate armor you find in museums. Because there's no reason you shouldn't.",
+    "category": "rebalance",
+    "dependencies": [ "dda" ]
+  }
+]
